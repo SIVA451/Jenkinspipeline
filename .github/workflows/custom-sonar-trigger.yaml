@@ -4,7 +4,11 @@ on:
   pull_request:             # 🟢 Triggers on PR creation or update
     branches:
         - main
-  workflow_dispatch: {}     # 🟢 Allows manual trigger from GitHub UI
+  workflow_dispatch
+  push:                     # 🟢 Triggers on push to default branch
+    branches:
+      - main
+: {}     # 🟢 Allows manual trigger from GitHub UI
 
 jobs:
   sonar:
