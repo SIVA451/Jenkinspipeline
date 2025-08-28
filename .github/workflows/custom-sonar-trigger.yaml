@@ -1,16 +1,10 @@
 name: Sonar Scan (Auto)  # 🧪 Auto SonarQube scan workflow
 
 on:
-  push:
-    branches:
-      - main
   pull_request:             # 🟢 Triggers on PR creation or update
     branches:
         - main
   workflow_dispatch: {}     # 🟢 Allows manual trigger from GitHub UI
-    branches:
-        - main
-
 jobs:
   sonar:
     # Centralized multi-language wrapper workflow
