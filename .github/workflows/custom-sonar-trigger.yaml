@@ -5,6 +5,9 @@ on:
     branches:
         - main
   workflow_dispatch: {}     # 🟢 Allows manual trigger from GitHub UI
+  push:
+      branches:
+        - main
 
 jobs:
   sonar:
