@@ -13,7 +13,7 @@ jobs:
   sonar:
     # Centralized multi-language wrapper workflow
     # You don’t need to define build/test/scan logic here — handled in the wrapper
-    uses: AZU-RDIT/io-sonar-centralized-workflow-wrapper/.github/workflows/sonar-wrapper.yml@stable
+    uses: /.github/workflows/sonar-wrapper.yml@stable
 
     with:
       # ────────────────────────────────
